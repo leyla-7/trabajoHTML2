@@ -1,0 +1,126 @@
+.navbar {
+    background-color: #1247a8;
+}
+
+.navbar-brand {
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+h1 {
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+p {
+    font-size: 1.1rem;
+}
+
+.portafolio {
+    padding-top: 15px;
+}
+
+.portafolio p {
+    max-width: 900px;
+    margin: auto;
+    padding-bottom: 25px;
+}
+
+.carousel-inner img {
+    height: 400px;
+    width: 100%;
+    overflow: hidden;
+}
+
+.carousel-div {
+    max-width: 800px;
+    object-fit: cover;
+}
+
+
+.card-img-top {
+    max-height: 200px;
+    object-fit: cover;
+}
+
+.card {
+    transition: transform 0.3s;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+footer {
+    background-color: #1247a8;
+    color: white;
+    padding: 20px 0;
+    font-size: 0.9rem;
+}
+
+.footer a {
+    color: white;
+}
+
+.footer ul {
+    padding: 0;
+}
+
+.footer a:hover {
+    text-decoration: underline;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.about-section {
+    text-align: center;
+    padding: 20px 0;
+  }
+
+#map {
+    height: 475px;
+    width: 100%;
+    margin-top: 20px;
+}
+a img {
+    text-decoration: none;
+    border: none;
+}
+a {
+    text-decoration: none;
+}
+.portfolio-section {
+    text-align: center;
+    padding: 40px 0;
+}
+
+.portfolio-section img {
+    transition: transform 0.3s ease-in-out;
+    width: 100%;
+}
+.portfolio-section img:hover {
+    transform: scale(1.05);
+}
+
+@media (max-width: 768px) {
+    
+    .portfolio-section {
+        padding: 30px 10px;
+    }
+    .portfolio-section h1 {
+        font-size: 2rem;
+    }
+    .portfolio-section p {
+        font-size: 1rem;
+    }
+    .footer {
+        text-align: center;
+        list-style:none;
+    }
+
+    .footer-containers {
+        padding-top: 30px;
+    }
+}
