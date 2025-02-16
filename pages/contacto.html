@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="zxx">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" >
+    <link href="../css_js/css.css" rel="stylesheet">
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <div class="container d-flex">
+            <a class="navbar-brand order-2 order-lg-1 ms-2 ms-lg-0" href="#">MasterD</a>
+            <button class="navbar-toggler order-1 order-lg-2" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse order-3 order-lg-3" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="../index.html">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./galeria.html">Gallery</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <main class="container my-5">
+
+     <div class="container d-none d-md-block my-4 carousel-div">
+        <div id="carrusel" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item">
+                    <img src="../images/colombia.jpg" class="d-block" alt="Colombia">
+                </div>
+                <div class="carousel-item active">
+                    <img src="../images/egipto.jpg" class="d-block" alt="Egipto">
+                </div>
+                <div class="carousel-item">
+                    <img src="../images/portugal.jpg" class="d-block" alt="Portugal">
+                </div>
+                <div class="carousel-item">
+                    <img src="../images/sardinia.jpg" class="d-block" alt="Italia">
+                </div>
+                <div class="carousel-item">
+                    <img src="../images/mongolia.jpg" class="d-block" alt="Mongolia">
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carrusel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carrusel" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+        </div>
+
+        <h1 class="text-center mb-5">Contacto</h1>
+
+        <div class="row g-5">
+
+        <div class="col-12 col-md-6">
+
+         <h2 class="mb-4">Rellena el formulario</h2>
+        <form id="contact-form">
+            <div class="mb-3">
+                <label for="name" class="form-label">Nombre*</label>
+                <input type="text" class="form-control" id="name" placeholder="Tu nombre" required pattern="[A-Za-zÀ-ÿ ]{3,40}">
+            </div>
+            <div class="mb-3">
+                <label for="surname" class="form-label">Apellidos*</label>
+                <input type="text" class="form-control" id="surname" placeholder="Tus apellidos" required pattern="[A-Za-zÀ-ÿ ]{4,60}">
+            </div>
+            <div class="mb-3">
+                <label for="email" class="form-label">Correo electrónico*</label>
+                <input type="email" class="form-control" id="email" placeholder="email@example.com" required>
+            </div>
+            <div class="mb-3">
+                <label for="phone" class="form-label">Teléfono*</label>
+                <input type="tel" class="form-control" id="phone" placeholder="123456789" required pattern="^[0-9]{9}$">
+            </div>
+            <div class="mb-3">
+                <label for="comments" class="form-label">Comentarios</label>
+                <textarea class="form-control" id="comments" rows="3"></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">Enviar</button>
+            <button type="reset" class="btn btn-secondary">Limpiar</button>
+        </form>
+        </div>
+        <div class="col-12 col-md-6">
+
+        <div id="map" class="mx-auto"></div>
+    </div>
+    </div>
+    </main>
+
+    <footer class="footer">
+        <div class="container py-4">
+            <div class="row text-lg-start">
+                <div class="text-center col-12 col-md-4 mb-3 mb-md-0 order-3 order-md-1 footer-containers">
+                    <h5>Aviso Legal</h5>
+                    <p>Master D. Todos los derechos reservados 2025</p>
+                </div>
+                <div class="text-center col-12 col-md-4 mb-3 mb-md-0 order-2 order-md-2 footer-containers">
+                    <h5>Enlaces</h5>
+                    <ul class="footer-links list-unstyled">
+                        <li><a href="#">Inicio</a></li>
+                        <li><a href="./pages/galeria.html">Galería</a></li>
+                        <li><a href="./pages/contacto.html">Contacto</a></li>
+                    </ul>
+                </div>
+                <div class="text-center col-12 col-md-4 mb-3 mb-md-0 order-1 order-md-3">
+                    <h5>Nuestras redes</h5>
+                    <a href="https://www.facebook.com/MasterDoposiciones/" target="_blank" class="text-white me-3">
+                        <i class="bi bi-facebook fs-4"></i>
+                    </a>
+                    <a href="https://x.com/masterdistancia" target="_blank" class="text-white me-3">
+                        <i class="bi bi-twitter fs-4"></i>
+                    </a>
+                    <a href="https://www.instagram.com/masterdformacion/?hl=en" target="_blank">
+                        <i class="bi bi-instagram fs-4"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+    <script src="../css_js/js.js"></script>
+</body>
+
+</html>
